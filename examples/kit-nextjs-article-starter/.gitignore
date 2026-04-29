@@ -33,3 +33,6 @@
 !.sitecore/component-map.ts
 !.sitecore/component-map.client.ts
 .jest-cache
+
+# typescript incremental build cache
+*.tsbuildinfo

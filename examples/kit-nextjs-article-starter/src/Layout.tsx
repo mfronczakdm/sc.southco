@@ -11,6 +11,8 @@ import {
 } from '@sitecore-content-sdk/nextjs';
 import Scripts from 'src/Scripts';
 import SitecoreStyles from 'components/content-sdk/SitecoreStyles';
+import SouthCoCommerceHeader from 'components/southco-commerce-header/SouthCoCommerceHeader';
+import SouthCoCommerceFooter from 'components/southco-commerce-footer/SouthCoCommerceFooter';
 import { Figtree } from 'next/font/google';
 import componentMap from '.sitecore/component-map';
 import Providers from './Providers';
@@ -73,7 +75,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
             )
           ) : (
             <>
-              <header>
+              {/* <header>
                 <div id="header">
                   {route && (
                     <AppPlaceholder
@@ -84,7 +86,8 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                     />
                   )}
                 </div>
-              </header>
+              </header> */}
+              <SouthCoCommerceHeader isPreviewMode={mode.isEditing} />
               <main>
                 <div id="content" className="antialiased">
                   {route && (
@@ -97,7 +100,7 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                   )}
                 </div>
               </main>
-              <footer>
+              {/* <footer>
                 <div id="footer">
                   {route && (
                     <AppPlaceholder
@@ -108,7 +111,8 @@ const Layout = ({ page }: LayoutProps): JSX.Element => {
                     />
                   )}
                 </div>
-              </footer>
+              </footer> */}
+              <SouthCoCommerceFooter />
             </>
           )}
         </div>

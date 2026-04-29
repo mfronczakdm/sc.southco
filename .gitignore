@@ -49,3 +49,6 @@ packages/
 
 # VS Code settings
 .vscode/
+
+# JetBrains IDE settings
+.idea/
